@@ -290,7 +290,6 @@ function confirmOrder () {
         let imgDiv=document.createElement("div");
         imgDiv.className="image";
         let minImg=document.querySelector(`div[class="${pName}"]`);
-        console.log(minImg);
         imgDiv.innerHTML=`<img src="${minImg.textContent}" loading="lazy" alt="photo">`;
 
         let infoDiv=document.createElement("div");
@@ -346,7 +345,7 @@ function clearForNewOrder () {
     });
 
     if(innerWidth <= 767) {
-        confirmMessage.style.cssText=`opacity: 1; z-index: 5; min-width: calc(100% - 20px);
+        confirmMessage.style.cssText=`opacity: 0; z-index: 0; min-width: calc(100% - 20px);
         top: 100px; transform: translate(-50%,0)`;
     }
     else {
