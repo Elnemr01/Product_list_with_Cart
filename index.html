@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <title>Product list with cart</title>
+</head>
+<body>
+    <!-- confirmed message -->
+    <div class="message">
+        <div class="iconTrue">
+            <img src="images/icon-order-confirmed.svg" alt="photo" loading="lazy">
+        </div>
+        <h2>order confirmed</h2>
+        <p>we hope you enjoy your food</p>
+        <div class="order">
+            <div class="finalProducts"></div>
+            <div class="priceTotal">
+                <span class="text">order total</span>
+                <span class="money"></span>
+            </div>
+        </div>
+        <button>Start new order</button>
+    </div>
+    <!-- work area -->
+    <div class="container">
+        <div class="firstPart">
+            <h2>desserts</h2>
+            <div class="cards"></div>
+            <div class="images"></div>
+        </div>
+        <div class="secondPart">
+            <div>
+                <!-- empty part -->
+                <h2>your cart(0)</h2>
+                <div class="emptyCart">
+                    <img src="images/illustration-empty-cart.svg" alt="photo" loading="lazy">
+                    <p>your added items will appear here</p>
+                </div>
+                <!-- add to cart -->
+                <div class="chosenProducts">
+                    <div class="products"></div>
+                    <div class="totalPrice">
+                        <span>order total</span>
+                        <span>$25</span>
+                    </div>
+                    <div class="carbon">
+                        <img src="images/icon-carbon-neutral.svg" alt="photo" loading="lazy">
+                        This is a <span>carbon-nutural</span> delivery
+                    </div>
+                    <button class="confirm">confirm order</button>
+                </div>
+                <!-- ------------- -->
+                </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
